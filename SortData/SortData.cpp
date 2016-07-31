@@ -6,10 +6,13 @@
 
 int main()
 {
-	int arr_test[] = { 7, 2, 5, 3, 9 };
-	
-	quick_sort(arr_test, sizeof(arr_test) / sizeof(int));
+	int arr_test[] = { 3, 7, 9, 2, 3, 5 };
+	int len = sizeof(arr_test) / sizeof(int);
 
-    return 0;
+	quick_sort(arr_test, len);
+
+	dump_array(arr_test, len);
+    
+	return 0;
 }
 
